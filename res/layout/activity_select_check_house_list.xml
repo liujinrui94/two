@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lottery.www.s2.ui.HanderLayout android:id="@id/hander" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.lottery.www.s2.ui.XListView android:id="@id/xListView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_item_onclick" android:divider="@null" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/hintColor" android:gravity="center" android:id="@id/tvNoDataMsg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="没有开奖记录" />
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lottery.www.s2.ui.HanderLayout android:id="@id/hander" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/setup_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutShuang" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgShuang" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="双色球" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/gray_mine" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutDa" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgDa" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="大乐透" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout3D" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/img3D" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="福彩3D" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/gray_mine" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutPai3" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgPai3" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="排列3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutPai5" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgPai5" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="排列5" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/gray_mine" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <View android:background="@color/setup_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/loginout_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="竞彩类：" />
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutZuqiu" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgZqiu" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="竞彩足球" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/setup_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/loginout_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="高频彩：" />
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutGuang5" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgGuang5" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="广东11选5" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/gray_mine" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutJiang5" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgJiang5" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="江西11选5" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutSan5" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/imgSan5" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="山东11选5" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/gray_mine" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="90.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

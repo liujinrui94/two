@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip">
+            <com.lottery.www.s2.ui.RoundImageView android:id="@id/imgUserPhoto" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/textColor_black1" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/loginout_red" android:id="@id/tvMasterLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0dip" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/setup_background" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:id="@id/tvNo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:id="@id/tvMatchName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvVersusText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="15.0dip" android:textColor="@color/textColor_black1" android:id="@id/tvAnalysisText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+</LinearLayout>

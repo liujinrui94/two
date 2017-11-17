@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lottery.www.s2.ui.HanderLayout android:id="@id/hander" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/layoutShuang" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="双色球" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvShuangOpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvShuangOpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen6" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvShuangOpen7" android:background="@drawable/circle_blue_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutDa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="大乐透" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvDaOpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvDaOpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen6" android:background="@drawable/circle_blue_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvDaOpen7" android:background="@drawable/circle_blue_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout3D" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="福彩3D" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tv3DOpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tv3DOpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tv3DOpen1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tv3DOpen2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tv3DOpen3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutPai3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="排列三" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvPai3OpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvPai3OpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai3Open1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai3Open2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai3Open3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutPai5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="排列五" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvPai5OpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvPai5OpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai5Open1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai5Open2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai5Open3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai5Open4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvPai5Open5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutSan5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="山东11选5" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvSan5OpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvSan5OpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvSan5Open1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvSan5Open2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvSan5Open3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvSan5Open4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvSan5Open5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutGuang5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="广东11选5" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvGuang5OpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvGuang5OpenDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvGuang5Open1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvGuang5Open2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvGuang5Open3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvGuang5Open4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvGuang5Open5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutJiang5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/textColor_black1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="江西11选5" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvJiang5OpenNum" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0dip" android:id="@id/tvJiang5ODate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvJiang5Open1" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvJiang5Open2" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvJiang5Open3" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvJiang5Open4" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <TextView android:textColor="@color/textColor_black1" android:gravity="center" android:id="@id/tvJiang5Open5" android:background="@drawable/circle_red_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/contents_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

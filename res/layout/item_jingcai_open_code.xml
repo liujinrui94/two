@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="8.0dip" android:id="@id/tvNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周二001" />
+                <TextView android:textSize="8.0dip" android:id="@id/tvBiSaiName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="亚冠杯" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/imgTrimOneLogo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/user_icon" />
+                <TextView android:textSize="10.0dip" android:textColor="@color/red_blood_2" android:layout_gravity="center" android:id="@id/tvTrimOneName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="鹿岛鹿角" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0dip" android:id="@id/tvBiSaiState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已完场" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/green" android:layout_gravity="center" android:id="@id/tvBifen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1:0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="8.0dip" android:id="@id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周二001" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="10.0dip" android:textColor="@color/blue_button_1" android:layout_gravity="center" android:id="@id/tvTrimTwoName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="鹿岛鹿角" />
+                <ImageView android:id="@id/imgTrimTwoLogo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="40.0dip" android:src="@drawable/user_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+</LinearLayout>

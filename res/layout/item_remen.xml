@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="@color/text_home_black" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="alsdhlakshdlaskhdoiashdoiashdoiashoi" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/hintColor" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="alsdhlakshdlaskhdoiashdoiashdoiashoi" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/login_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞:" />
+            <TextView android:textColor="@color/loginout_red" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="10" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_mine" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

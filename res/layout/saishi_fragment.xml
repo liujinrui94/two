@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lottery.www.s2.ui.HanderLayout android:id="@id/hander" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <GridView android:id="@id/xListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="3" android:divider="@null" />
+</LinearLayout>

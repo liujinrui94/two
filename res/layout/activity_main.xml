@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lottery.www.s2.ui.HomeTabLayout android:id="@id/homeTabLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <FrameLayout android:id="@id/fragmentView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/homeTabLayout" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fenfen.no30702" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <permission android:name="com.fenfen.no30702.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.fenfen.no30702.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+       <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <application android:allowBackup="true" android:icon="@drawable/logonew" android:label="@string/app_name" android:name="com.lottery.www.s2.base.MyApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="com.lottery.www.s2.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lottery.www.s2.OfficalNetActivity" android:screenOrientation="portrait"/>
+		  <activity android:name="com.lottery.www.s2.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.OpenCodeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.activity.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.OpenCodeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.TuiJianDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.ZuqiuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.LanqiuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.SishiDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.SaishiActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.TuijianActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.RemenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.YuCeForActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.OpenCodeListDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.lottery.www.s2.function.openLottery.activity.ZoushiDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.fenfen.no30702"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="cn.jpush.android.service.PushService" android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.fenfen.no30702"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.fenfen.no30702"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.fenfen.no30702.jpush.MyReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.lottery.www.s2"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="b374a8b86fb679150a0c56cc"/>
+        <activity android:name="com.lottery.www.s2.activity.YinDaoActivity" android:theme="@style/AppTheme"/>
+    </application>
+</manifest>
