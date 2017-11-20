@@ -727,7 +727,6 @@
 
 .field public static final txt_titleStyle1:I = 0x7f090163
 
-
 # direct methods
 .method public constructor <init>()V
     .locals 0

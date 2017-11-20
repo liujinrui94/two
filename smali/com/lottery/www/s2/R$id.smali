@@ -615,6 +615,12 @@
 
 .field public static final my_webView:I = 0x7f0c0131
 
+.field public static final guide_bezier:I = 0x7f0c0132
+
+.field public static final guide_btn:I = 0x7f0c0133
+
+.field public static final guide_vp:I = 0x7f0c0134
+
 # direct methods
 .method public constructor <init>()V
     .locals 0

@@ -18,7 +18,7 @@
     .locals 4
 
     .prologue
-    const-wide/16 v2, 0x7d0
+    const-wide/16 v2, 0x3e8
 
     .line 34
     invoke-virtual {p0}, Lcom/lottery/www/s2/SplashActivity;->getBaseContext()Landroid/content/Context;
@@ -46,7 +46,7 @@
     :goto_0
     return-void
 
-    .line 46
+    .line 95
     :cond_0
     new-instance v0, Landroid/os/Handler;
 
@@ -230,7 +230,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 27
-    const v0, 0x7f04001b
+    const v0, 0x7f040062
 
     invoke-virtual {p0, v0}, Lcom/lottery/www/s2/SplashActivity;->setContentView(I)V
 

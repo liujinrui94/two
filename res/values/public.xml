@@ -664,7 +664,9 @@
     <public type="layout" name="xlistview_footer" id="0x7f040058" />
     <public type="layout" name="xlistview_header" id="0x7f040059" />
 	<public type="layout" name="my_activity_show_web" id="0x7f040060" />
-    <public type="anim" name="abc_fade_in" id="0x7f050000" />
+	<public type="layout" name="my_activity_guide" id="0x7f040061" />
+	<public type="layout" name="my_activity_main" id="0x7f040062" />
+	<public type="anim" name="abc_fade_in" id="0x7f050000" />
     <public type="anim" name="abc_fade_out" id="0x7f050001" />
     <public type="anim" name="abc_grow_fade_in_from_bottom" id="0x7f050002" />
     <public type="anim" name="abc_popup_enter" id="0x7f050003" />
@@ -1375,7 +1377,7 @@
     <public type="style" name="Base.V22.Theme.AppCompat.Light" id="0x7f09007f" />
     <public type="style" name="Base.V23.Theme.AppCompat" id="0x7f090082" />
     <public type="style" name="Base.V23.Theme.AppCompat.Light" id="0x7f090083" />
-    <public type="integer" name="abc_max_action_buttons" id="0x7f0a0000" />
+	<public type="integer" name="abc_max_action_buttons" id="0x7f0a0000" />
     <public type="integer" name="design_snackbar_text_max_lines" id="0x7f0a0001" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0a0002" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0a0003" />
@@ -2439,4 +2441,7 @@
     <public type="id" name="xlistview_header_progressbar" id="0x7f0c0129" />
 	<public type="id" name="my_pb" id="0x7f0c0130" />
 	<public type="id" name="my_webView" id="0x7f0c0131" />
+	<public type="id" name="guide_bezier" id="0x7f0c0132" />
+	<public type="id" name="guide_btn" id="0x7f0c0133" />
+	<public type="id" name="guide_vp" id="0x7f0c0134" />
 </resources>

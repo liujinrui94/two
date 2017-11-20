@@ -251,6 +251,9 @@
     <item type="id" name="xlistview_header_time">false</item>
     <item type="id" name="xlistview_header_arrow">false</item>
     <item type="id" name="xlistview_header_progressbar">false</item>
-	    <item type="id" name="my_pb">false</item>
+	<item type="id" name="my_pb">false</item>
     <item type="id" name="my_webView">false</item>
+	<item type="id" name="guide_bezier">false</item>
+    <item type="id" name="guide_btn">false</item>
+	<item type="id" name="guide_vp">false</item>
 </resources>

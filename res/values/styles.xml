@@ -1294,4 +1294,12 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+<declare-styleable name="BezierRoundView">
+        <attr name="color_bez" format="color"/>
+        <attr name="color_stroke" format="color"/>
+        <attr name="time_animator" format="integer"/>
+        <attr name="round_count" format="integer"/>
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
 </resources>

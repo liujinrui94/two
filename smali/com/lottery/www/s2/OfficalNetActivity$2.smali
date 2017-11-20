@@ -1,5 +1,5 @@
 .class Lcom/lottery/www/s2/OfficalNetActivity$2;
-.super Landroid/webkit/WebChromeClient;
+.super Landroid/webkit/WebViewClient;
 .source "OfficalNetActivity.java"
 
 
@@ -24,118 +24,78 @@
     .param p1, "this$0"    # Lcom/lottery/www/s2/OfficalNetActivity;
 
     .prologue
-    .line 55
+    .line 59
     iput-object p1, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
 
-    invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
+    invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onProgressChanged(Landroid/webkit/WebView;I)V
-    .locals 2
+.method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
+    .locals 3
     .param p1, "view"    # Landroid/webkit/WebView;
-    .param p2, "newProgress"    # I
+    .param p2, "url"    # Ljava/lang/String;
 
     .prologue
-    const/16 v0, 0x64
+    .line 62
+    const-string v1, "http:"
+
+    invoke-virtual {p2, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "https:"
+
+    invoke-virtual {p2, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 63
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 70
+    :goto_0
+    return v1
+
+    .line 66
+    :cond_1
+    :try_start_0
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "android.intent.action.VIEW"
+
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 67
-    if-ge p2, v0, :cond_2
+    .local v0, "intent":Landroid/content/Intent;
+    iget-object v1, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
 
-    .line 68
-    iget-object v0, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
+    invoke-virtual {v1, v0}, Lcom/lottery/www/s2/OfficalNetActivity;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-static {v0}, Lcom/lottery/www/s2/OfficalNetActivity;->access$000(Lcom/lottery/www/s2/OfficalNetActivity;)Landroid/widget/ProgressBar;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 69
-    iget-object v0, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
-
-    invoke-static {v0}, Lcom/lottery/www/s2/OfficalNetActivity;->access$000(Lcom/lottery/www/s2/OfficalNetActivity;)Landroid/widget/ProgressBar;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Landroid/widget/ProgressBar;->setProgress(I)V
-
-    .line 71
-    :cond_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "%"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 77
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 72
-    :cond_2
-    if-ne p2, v0, :cond_1
-
-    .line 73
-    iget-object v0, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
-
-    invoke-static {v0}, Lcom/lottery/www/s2/OfficalNetActivity;->access$000(Lcom/lottery/www/s2/OfficalNetActivity;)Landroid/widget/ProgressBar;
-
-    move-result-object v0
-
-    invoke-virtual {v0, p2}, Landroid/widget/ProgressBar;->setProgress(I)V
-
-    .line 74
-    iget-object v0, p0, Lcom/lottery/www/s2/OfficalNetActivity$2;->this$0:Lcom/lottery/www/s2/OfficalNetActivity;
-
-    invoke-static {v0}, Lcom/lottery/www/s2/OfficalNetActivity;->access$000(Lcom/lottery/www/s2/OfficalNetActivity;)Landroid/widget/ProgressBar;
-
-    move-result-object v0
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
-
-    .line 75
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v1, "%"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 70
+    .end local v0    # "intent":Landroid/content/Intent;
+    :goto_1
+    const/4 v1, 0x1
 
     goto :goto_0
-.end method
 
-.method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
-    .locals 0
-    .param p1, "view"    # Landroid/webkit/WebView;
-    .param p2, "title"    # Ljava/lang/String;
+    .line 68
+    :catch_0
+    move-exception v1
 
-    .prologue
-    .line 61
-    return-void
+    goto :goto_1
 .end method

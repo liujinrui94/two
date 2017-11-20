@@ -195,8 +195,11 @@
 
 .field public static final xlistview_header:I = 0x7f040059
 
-.field public static final xlistview_header:I = 0x7f040060
+.field public static final my_activity_show_web:I = 0x7f040060
 
+.field public static final my_activity_guide:I = 0x7f040061
+
+.field public static final my_activity_main:I = 0x7f040062
 
 # direct methods
 .method public constructor <init>()V
