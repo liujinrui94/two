@@ -24,7 +24,7 @@
     .param p1, "this$1"    # Lcom/lottery/www/s2/SplashActivity$2;
 
     .prologue
-    .line 98
+    .line 99
     iput-object p1, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     invoke-direct {p0}, Lcom/lottery/www/s2/HttpUtils$HttpCallback;-><init>()V
@@ -39,15 +39,15 @@
     .param p1, "msg"    # Ljava/lang/String;
 
     .prologue
-    .line 119
+    .line 120
     invoke-super {p0, p1}, Lcom/lottery/www/s2/HttpUtils$HttpCallback;->onError(Ljava/lang/String;)V
 
-    .line 120
+    .line 121
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 121
+    .line 122
     .local v0, "intent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
@@ -57,21 +57,21 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 122
+    .line 123
     iget-object v1, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v1, v1, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
 
     invoke-virtual {v1, v0}, Lcom/lottery/www/s2/SplashActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 123
+    .line 124
     iget-object v1, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v1, v1, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
 
     invoke-virtual {v1}, Lcom/lottery/www/s2/SplashActivity;->finish()V
 
-    .line 125
+    .line 126
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .param p1, "data"    # Ljava/lang/String;
 
     .prologue
-    .line 101
+    .line 102
     new-instance v2, Lcom/google/gson/Gson;
 
     invoke-direct {v2}, Lcom/google/gson/Gson;-><init>()V
@@ -93,11 +93,11 @@
 
     check-cast v1, Lcom/lottery/www/s2/MyBean;
 
-    .line 102
+    .line 103
     .local v1, "myBean":Lcom/lottery/www/s2/MyBean;
     const-string v2, "1"
 
-    invoke-virtual {v1}, Lcom/lottery/www/s2/MyBean;->getStatus()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/lottery/www/s2/MyBean;->getIsshowwap()Ljava/lang/String;
 
     move-result-object v3
 
@@ -107,22 +107,22 @@
 
     if-eqz v2, :cond_0
 
-    .line 103
+    .line 104
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 104
+    .line 105
     .local v0, "intent":Landroid/content/Intent;
     const-string v2, "url"
 
-    invoke-virtual {v1}, Lcom/lottery/www/s2/MyBean;->getUrl()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/lottery/www/s2/MyBean;->getWapurl()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 105
+    .line 106
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v2, v2, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
@@ -131,32 +131,32 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 106
+    .line 107
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v2, v2, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
 
     invoke-virtual {v2, v0}, Lcom/lottery/www/s2/SplashActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 107
+    .line 108
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v2, v2, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
 
     invoke-virtual {v2}, Lcom/lottery/www/s2/SplashActivity;->finish()V
 
-    .line 115
+    .line 116
     :goto_0
     return-void
 
-    .line 109
+    .line 110
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 110
+    .line 111
     .restart local v0    # "intent":Landroid/content/Intent;
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
@@ -166,14 +166,14 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 111
+    .line 112
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v2, v2, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;
 
     invoke-virtual {v2, v0}, Lcom/lottery/www/s2/SplashActivity;->startActivity(Landroid/content/Intent;)V
 
-    .line 112
+    .line 113
     iget-object v2, p0, Lcom/lottery/www/s2/SplashActivity$2$1;->this$1:Lcom/lottery/www/s2/SplashActivity$2;
 
     iget-object v2, v2, Lcom/lottery/www/s2/SplashActivity$2;->this$0:Lcom/lottery/www/s2/SplashActivity;

@@ -42,11 +42,11 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 137
+    .line 138
     :goto_0
     return-void
 
-    .line 95
+    .line 96
     :cond_0
     new-instance v0, Landroid/os/Handler;
 
@@ -70,7 +70,7 @@
 
     const/4 v7, 0x0
 
-    .line 141
+    .line 142
     const-string v8, "connectivity"
 
     invoke-virtual {p0, v8}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -79,7 +79,7 @@
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 143
+    .line 144
     .local v1, "connectivityManager":Landroid/net/ConnectivityManager;
     sget v8, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -87,12 +87,12 @@
 
     if-lt v8, v9, :cond_1
 
-    .line 144
+    .line 145
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getAllNetworks()[Landroid/net/Network;
 
     move-result-object v5
 
-    .line 146
+    .line 147
     .local v5, "networks":[Landroid/net/Network;
     array-length v9, v5
 
@@ -103,13 +103,13 @@
 
     aget-object v3, v5, v8
 
-    .line 147
+    .line 148
     .local v3, "mNetwork":Landroid/net/Network;
     invoke-virtual {v1, v3}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
 
     move-result-object v4
 
-    .line 148
+    .line 149
     .local v4, "networkInfo":Landroid/net/NetworkInfo;
     invoke-virtual {v4}, Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;
 
@@ -123,14 +123,14 @@
 
     if-eqz v10, :cond_0
 
-    .line 166
+    .line 167
     .end local v3    # "mNetwork":Landroid/net/Network;
     .end local v4    # "networkInfo":Landroid/net/NetworkInfo;
     .end local v5    # "networks":[Landroid/net/Network;
     :goto_1
     return v6
 
-    .line 146
+    .line 147
     .restart local v3    # "mNetwork":Landroid/net/Network;
     .restart local v4    # "networkInfo":Landroid/net/NetworkInfo;
     .restart local v5    # "networks":[Landroid/net/Network;
@@ -139,23 +139,23 @@
 
     goto :goto_0
 
-    .line 154
+    .line 155
     .end local v3    # "mNetwork":Landroid/net/Network;
     .end local v4    # "networkInfo":Landroid/net/NetworkInfo;
     .end local v5    # "networks":[Landroid/net/Network;
     :cond_1
     if-eqz v1, :cond_3
 
-    .line 155
+    .line 156
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getAllNetworkInfo()[Landroid/net/NetworkInfo;
 
     move-result-object v2
 
-    .line 156
+    .line 157
     .local v2, "info":[Landroid/net/NetworkInfo;
     if-eqz v2, :cond_3
 
-    .line 157
+    .line 158
     array-length v9, v2
 
     move v8, v7
@@ -165,7 +165,7 @@
 
     aget-object v0, v2, v8
 
-    .line 158
+    .line 159
     .local v0, "anInfo":Landroid/net/NetworkInfo;
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;
 
@@ -175,7 +175,7 @@
 
     if-ne v10, v11, :cond_2
 
-    .line 159
+    .line 160
     const-string v7, "Network"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -204,7 +204,7 @@
 
     goto :goto_1
 
-    .line 157
+    .line 158
     :cond_2
     add-int/lit8 v8, v8, 0x1
 
@@ -215,7 +215,7 @@
     :cond_3
     move v6, v7
 
-    .line 166
+    .line 167
     goto :goto_1
 .end method
 

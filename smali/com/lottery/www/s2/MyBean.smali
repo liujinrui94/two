@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field status:Ljava/lang/String;
+.field isshowwap:Ljava/lang/String;
 
-.field url:Ljava/lang/String;
+.field wapurl:Ljava/lang/String;
 
 
 # direct methods
@@ -14,7 +14,7 @@
     .locals 0
 
     .prologue
-    .line 170
+    .line 171
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,46 +22,46 @@
 
 
 # virtual methods
-.method public getStatus()Ljava/lang/String;
+.method public getIsshowwap()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 175
-    iget-object v0, p0, Lcom/lottery/www/s2/MyBean;->status:Ljava/lang/String;
+    .line 176
+    iget-object v0, p0, Lcom/lottery/www/s2/MyBean;->isshowwap:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public getUrl()Ljava/lang/String;
+.method public getWapurl()Ljava/lang/String;
     .locals 1
 
     .prologue
-    .line 183
-    iget-object v0, p0, Lcom/lottery/www/s2/MyBean;->url:Ljava/lang/String;
+    .line 184
+    iget-object v0, p0, Lcom/lottery/www/s2/MyBean;->wapurl:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public setStatus(Ljava/lang/String;)V
+.method public setIsshowwap(Ljava/lang/String;)V
     .locals 0
-    .param p1, "status"    # Ljava/lang/String;
+    .param p1, "isshowwap"    # Ljava/lang/String;
 
     .prologue
-    .line 179
-    iput-object p1, p0, Lcom/lottery/www/s2/MyBean;->status:Ljava/lang/String;
-
     .line 180
+    iput-object p1, p0, Lcom/lottery/www/s2/MyBean;->isshowwap:Ljava/lang/String;
+
+    .line 181
     return-void
 .end method
 
-.method public setUrl(Ljava/lang/String;)V
+.method public setWapurl(Ljava/lang/String;)V
     .locals 0
-    .param p1, "url"    # Ljava/lang/String;
+    .param p1, "wapurl"    # Ljava/lang/String;
 
     .prologue
-    .line 187
-    iput-object p1, p0, Lcom/lottery/www/s2/MyBean;->url:Ljava/lang/String;
-
     .line 188
+    iput-object p1, p0, Lcom/lottery/www/s2/MyBean;->wapurl:Ljava/lang/String;
+
+    .line 189
     return-void
 .end method
